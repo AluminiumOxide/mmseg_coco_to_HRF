@@ -9,9 +9,11 @@ def generate_HRF_dataset_dirs(dataset_dir):
         '/images',
         '/images/training',
         '/images/validation',
+        '/images/testing',
         '/annotations',
         '/annotations/training',
-        '/annotations/validation'
+        '/annotations/validation',
+        '/annotations/testing'
     ]
     for append_dir in dir_list:
         try:
