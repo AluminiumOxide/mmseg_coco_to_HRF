@@ -52,3 +52,18 @@ mmsegmentation-master
 
     dataset_dir = '../data/HRF_new'
 ```
+5、运行calcuate_mean_and_std.py 计算数据集的均值和方差（在mmseg设置数据集有用）
+   - 需要设置以下几个参数，分别是 
+       - 数据集图像目录
+       - resize高度
+       - resize宽度
+```python
+    imgs_path = './base_images'  # 图片目录
+    img_h = 400 
+    img_w = 600  # 根据自己数据集适当调整，别太大了，最开始头铁4000、6000速度特别慢
+``` 
+输出类似于以下结果
+```python
+normMean = [0.55044323, 0.37878156, 0.36924595]
+normStd = [0.18972462, 0.15784022, 0.16161829]
+``` 
