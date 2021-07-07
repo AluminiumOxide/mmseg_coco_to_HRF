@@ -1,5 +1,5 @@
-## mmseg_coco_to_HRF
-# 准备工作
+# mmseg_coco_to_HRF
+## 准备工作
 1. 直接把这个项目解压到mmsegmentation目录下
 ```
 mmsegmentation-master
@@ -16,7 +16,7 @@ mmsegmentation-master
 ```
 2. 创建conda环境，环境下安装labelme(确认在哪个conda环境里有labelme也行)
 
-# 使用方法
+## 使用方法
 1、将对应的图像数据和标注后的json数据分别放进对应的两个文件夹
 2、运行batch_labelme_json_to_dataset.py 用于将原json文件转成label图
     - 需要设置以下几个参数，分别是 
